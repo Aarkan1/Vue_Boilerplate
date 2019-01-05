@@ -1,7 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img alt="Vue logo" src="../assets/logo.png">
-    <a class="navbar-brand ml-5" href="#">Navbar</a>
+    <router-link class="navbar-brand ml-5" to="/">
+      <img class="mt-2" alt="Vue logo" src="../assets/logo.png">
+      My app
+    </router-link>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
