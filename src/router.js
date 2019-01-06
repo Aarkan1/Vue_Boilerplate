@@ -2,6 +2,8 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
 import Todo from "./views/Todo.vue";
+import Examples from "./views/Examples.vue";
+import MissingPage from "./views/MissingPage.vue";
 
 Vue.use(Router);
 
@@ -20,6 +22,11 @@ export default new Router({
       component: Todo
     },
     {
+      path: "/examples",
+      name: "examples",
+      component: Examples
+    },
+    {
       path: "/about",
       name: "about",
       // route level code-splitting
@@ -27,6 +34,13 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/About.vue")
+    },
+    // using path "*" matches every route
+    // put this last to catch all missing routes
+    {
+      path: "*",
+      name: "missing-page",
+      component: MissingPage
     }
   ]
 });

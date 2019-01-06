@@ -1,15 +1,20 @@
 <template>
-    <div id="footer">
-        <p>© 2019 Boilerplate</p>
-    </div>
+<footer id="footer">
+    <p>© 2019 Aarkan, MIT License</p>
+</footer>
 </template>
 
+<script>
+/* eslint-disable */
+</script>
+
 <style scoped>
-    #footer {
-        position: absolute;
-        height: 50px;
-        width: 100%;
-        bottom: 0;
-        background-color: lightgray;
-    }
+#footer {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 8px;
+    border-top: 1px solid gray;
+    background-image: linear-gradient(lightgray, white);
+}
 </style>

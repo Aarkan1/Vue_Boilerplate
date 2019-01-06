@@ -1,43 +1,44 @@
 <template>
-  <div class="home">
+<div class="home">
     <h1>Start Page</h1>
 
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-  With Bootstrap!
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
+    <div class="alert col-8 alert-success alert-dismissible fade show" role="alert">
+        With Bootstrap!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span></button>
+    </div>
 </div>
-
-  </div>
 </template>
 
 <script>
-  export default {
+/* eslint-disable */
+export default {
     name: "Home",
-    alive: true,
-    props: {
-    }
-  };
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
-  h3 {
+h3 {
     margin: 40px 0 0;
-  }
-  
-  ul {
+}
+
+ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  li {
+}
+
+li {
     display: inline-block;
     margin: 0 10px;
-  }
-  
-  a {
+}
+
+a {
     color: #42b983;
-  }
+}
+
+.alert {
+    margin: 10% auto;
+}
 </style>
