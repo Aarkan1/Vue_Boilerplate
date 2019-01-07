@@ -9,12 +9,15 @@
 </script>
 
 <style scoped>
-#footer {
+footer {
     height: 50px;
     width: 100%;
     margin-top: 20px;
     padding-top: 8px;
     border-top: 1px solid gray;
     background-image: linear-gradient(lightgray, white);
+}
+footer>p{
+    font-size: 1em;
 }
 </style>

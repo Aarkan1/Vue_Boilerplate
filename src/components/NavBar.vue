@@ -1,3 +1,6 @@
+<!-- 
+    When creating new pages you need to update the navbar
+ -->
 <template>
 <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
     <router-link class="navbar-brand" to="/">
@@ -40,6 +43,7 @@ nav {
 nav img {
     width: 1.5em;
     height: 1.5em;
+    margin-right: 5px;
 }
 
 nav a {
