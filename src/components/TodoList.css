@@ -1,0 +1,94 @@
+.holder {
+    margin: 0 auto;
+    background: #fff;
+    width: 80%;
+}
+
+.holder form {
+    position: relative;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    padding: 20px;
+    font-size: 1.3em;
+    width: 100%;
+    background-color: rgb(232, 234, 235);
+    border-left: 5px solid rgb(30, 94, 131);
+    margin-bottom: 2px;
+    color: #3E5252;
+}
+
+p {
+    text-align: center;
+    padding: 30px 0;
+    color: gray;
+}
+
+.container {
+    box-shadow: 0px 0px 40px lightgray;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    padding: 20px;
+    font-size: 1.3em;
+    background-color: #323333;
+    color: #687F7F;
+}
+
+.alert {
+    background: #fdf2ce;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    padding: 5px;
+    margin-top: -20px;
+}
+
+.alert-in-enter-active {
+    animation: bounce-in .5s;
+}
+
+.alert-in-leave-active {
+    animation: bounce-in .5s reverse;
+}
+.list-complete-item {
+  transition: all 1s;
+  display: inline-block;
+  margin-right: 10px;
+}
+.list-complete-enter, .list-complete-leave-to
+/* .list-complete-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.list-complete-leave-active {
+  position: absolute;
+}
+@keyframes bounce-in {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+i {
+    float: right;
+    cursor: pointer;
+}
