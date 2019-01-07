@@ -17,7 +17,7 @@ npm run serve
 npm run build
 ```
 
-To add a new page, you need to update 2 places: NavBar and router.js.
+To add a new page, you need to update routes in router.js.
 
 
 There is a reactive store to place global variables.

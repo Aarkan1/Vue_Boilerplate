@@ -14,29 +14,29 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "home",
+      name: "Home",
       component: Home
     },
     {
       path: "/todo",
-      name: "todo",
+      name: "Todo List",
       component: Todo
     },
     {
       path: "/examples",
-      name: "examples",
+      name: "Examples",
       component: Examples
     },
     {
       path: "/about",
-      name: "about",
+      name: "About",
       component: About
     },
     // using path "*" matches every route
     // put this last to catch all missing routes
     {
       path: "*",
-      name: "missing-page",
+      name: "Missing-Page",
       component: MissingPage
     }
   ]

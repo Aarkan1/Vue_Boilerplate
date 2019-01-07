@@ -1,7 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-// import VeeValidate from "vee-validate";
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Store from "./store";
@@ -12,7 +11,11 @@ import Store from "./store";
 Vue.$store = new Store();
 Vue.prototype.$store = Vue.$store;
 
-// Vue.use(VeeValidate);
+// store all routes globally to fill navbar automatically
+Vue.$store.$routes = router.options.routes;
+// removes missing-page from nav-links
+Vue.$store.$routes.pop();
+
 Vue.config.productionTip = false;
 
 new Vue({
