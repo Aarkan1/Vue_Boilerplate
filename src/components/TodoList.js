@@ -33,7 +33,7 @@ export default {
         return {
             item: '',
             // load array from local storage on startup
-            items: storeOptions.load(), 
+            items: storeOptions.load(),
             validate: false,
             error: 'Type atleast 2 characters'
         }
@@ -50,7 +50,7 @@ export default {
         },
         item: {
             // check input length for validation
-            handler: function (){
+            handler: function () {
                 this.validate = this.item.length < 2 && this.item.length > 0 ? true : false;
             }
         }
@@ -66,10 +66,10 @@ export default {
             } else {
                 console.log('Not valid');
             }
+        },
+        removeItem(item) {
+            // remove item from array at index recieved
+            this.items.splice(item, 1);
         }
-    },
-    removeItem(item) {
-        // remove item from array at index recieved
-        this.items.splice(item, 1);
     }
 }

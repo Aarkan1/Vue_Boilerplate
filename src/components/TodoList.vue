@@ -11,16 +11,16 @@
             <p class="alert" v-if="validate">{{ error }}</p>
         </transition>
     </form>
-        <!-- transition-group is used in conjunction with v-for -->
-        <transition-group tag="ul" name="list" enter-active-class="animated bounceIn" leave-active-class="animated bounceOut">
-            <!-- for some reason transition-group won't work 
+    <!-- transition-group is used in conjunction with v-for -->
+    <transition-group tag="ul" name="list" enter-active-class="animated bounceIn" leave-active-class="animated bounceOut">
+        <!-- for some reason transition-group won't work 
                 unless key index is + 1, this is a known issue
                 v-for loops through items, and create a <li> for every item -->
-            <li v-for="(list, index) in items" :key='index + 1'>
-                {{index + 1}}: {{ list.item }}
-                <i class="fa fa-minus-circle" v-on:click="removeItem(index)"></i>
-            </li>
-        </transition-group>
+        <li v-for="(list, index) in items" :key='index + 1'>
+            {{index + 1}}: {{ list.item }}
+            <i class="fa fa-minus-circle" v-on:click="removeItem(index)"></i>
+        </li>
+    </transition-group>
 </div>
 </template>
 
