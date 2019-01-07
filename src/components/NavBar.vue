@@ -12,18 +12,13 @@
     </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <router-link to="/">Home</router-link>
+
+                <!-- routes is stored globally 
+                    loop all routes and add them to navbar -->
+                <li v-for="(link, index) in $store.$routes" :key="index" class="nav-item">
+                    <router-link :to="link.path">{{ link.name }}</router-link>
                 </li>
-                <li class="nav-item">
-                    <router-link to="/todo">Todo List</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link to="/examples">Examples</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link to="/about">About</router-link>
-                </li>
+
             </ul>
         </div>
 </nav>
@@ -31,6 +26,7 @@
 
 <script>
 /* eslint-disable */
+
 </script>
 
 <style>

@@ -24,4 +24,5 @@ export default {
 }
 </script>
 
+<!-- this is the global css file -->
 <style src="./style.css"></style>
