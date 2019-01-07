@@ -2,7 +2,7 @@
 Vue boilerplate with bootstrap 4 
 and vue routes
 
-© 2019 Aarkan, MIT License
+
 
 ```
 # install dependencies
@@ -14,3 +14,5 @@ npm run serve
 # build for production with minification
 npm run build
 ```
+
+© 2019 Aarkan, MIT License
