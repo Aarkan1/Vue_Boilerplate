@@ -11,11 +11,6 @@ import Store from "./store";
 Vue.$store = new Store();
 Vue.prototype.$store = Vue.$store;
 
-// store all routes globally to fill navbar automatically
-Vue.$store.$routes = router.options.routes;
-// removes missing-page from nav-links
-Vue.$store.$routes.pop();
-
 Vue.config.productionTip = false;
 
 new Vue({
