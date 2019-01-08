@@ -22,18 +22,28 @@
 <script>
 /* eslint-disable */
 
+import {eventBus} from "@/main";
+
 export default {
     name: 'Example2',
     data() {
         return {
-            showJumbo: false
+            showJumbo: this.$store.testDataTransfer
         }
     },
     methods: {
         toggleShow() {
             // simple boolean toggle on click
-            this.showJumbo = !this.showJumbo;
+            this.showJumbo = this.$store.testDataTransfer = !this.$store.testDataTransfer;
+            // with eventBus data can be transfered to 
+            // sibling components on events
+            eventBus.$emit('showText', this.showJumbo);
         }
+    },
+    mounted(){
+        // reset global boolean on path load
+        if(location.pathname === '/examples')
+        this.showJumbo = this.$store.testDataTransfer = false;
     }
 }
 </script>

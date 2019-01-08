@@ -45,8 +45,7 @@ export default {
             handler: function (items) {
                 // updates array at local storage on every change in the local array
                 storeOptions.save(items);
-            },
-            deep: true
+            }
         },
         item: {
             // check input length for validation

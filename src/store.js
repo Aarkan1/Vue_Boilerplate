@@ -9,5 +9,6 @@ export default class store {
     constructor(){
         // use this.$store.exampleVariable to access this reactive variable
         this.exampleVariable = 'example string';
+        this.testDataTransfer = false;
     }
 }

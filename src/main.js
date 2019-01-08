@@ -16,6 +16,10 @@ Vue.$store.$routes = router.options.routes;
 // removes missing-page from nav-links
 Vue.$store.$routes.pop();
 
+// another way to share data between components globally
+// is to create a server bus to share data on events
+export const eventBus = new Vue();
+
 Vue.config.productionTip = false;
 
 new Vue({

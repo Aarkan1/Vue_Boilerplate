@@ -1,8 +1,8 @@
 <template>
-  <div class="examples">
+<div class="examples">
     <Example1 />
     <Example2 />
-  </div>
+</div>
 </template>
 
 <script>
@@ -11,11 +11,10 @@ import Example1 from "@/components/examples/Example1.vue";
 import Example2 from "@/components/examples/Example2.vue";
 
 export default {
-  name: "examples",
-  components: {
-    Example1,
-    Example2
-
-  }
+    name: "examples",
+    components: {
+        Example1,
+        Example2
+    }
 };
 </script>

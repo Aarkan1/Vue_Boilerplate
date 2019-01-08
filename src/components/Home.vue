@@ -2,6 +2,8 @@
 <div class="home">
     <h1>Start Page</h1>
 
+    <p v-if="transfer">Transfering data from examples</p>
+
     <div class="alert col-8 alert-success alert-dismissible fade show" role="alert">
         With Bootstrap!
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -14,6 +16,12 @@
 /* eslint-disable */
 export default {
     name: "Home",
+    data(){
+        return {
+            // get data from global store
+            transfer: this.$store.testDataTransfer
+        }
+    }
 };
 </script>
 
