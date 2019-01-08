@@ -12,7 +12,7 @@
         </transition>
     </form>
     <!-- transition-group is used in conjunction with v-for -->
-    <transition-group tag="ul" name="list" enter-active-class="animated bounceIn" leave-active-class="animated bounceOut">
+    <transition-group tag="ul" name="list" enter-active-class="animated slideInUp" leave-active-class="animated slideOutDown">
         <!-- for some reason transition-group won't work 
                 unless key index is / 1, this is a known issue
                 v-for loops through items, and create a <li> for every item -->

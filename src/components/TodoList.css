@@ -60,19 +60,7 @@ input {
 .alert-in-leave-active {
     animation: bounce-in .5s reverse;
 }
-.list-complete-item {
-  transition: all 1s;
-  display: inline-block;
-  margin-right: 10px;
-}
-.list-complete-enter, .list-complete-leave-to
-/* .list-complete-leave-active below version 2.1.8 */ {
-  opacity: 0;
-  transform: translateY(30px);
-}
-.list-complete-leave-active {
-  position: absolute;
-}
+/* Custom animation */
 @keyframes bounce-in {
     0% {
         transform: scale(0);
