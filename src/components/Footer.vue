@@ -16,6 +16,7 @@ footer {
     padding-top: 8px;
     border-top: 1px solid gray;
     background-image: linear-gradient(lightgray, white);
+    box-shadow: 0 0 5px;
 }
 footer>p{
     font-size: 1em;
