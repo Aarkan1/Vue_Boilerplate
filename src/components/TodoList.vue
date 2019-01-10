@@ -19,7 +19,7 @@
         <li v-for="(list, index) in items" :key='index / 1'
         class="d-flex align-items-center justify-content-between shadow">
             {{index + 1}}: {{ list.item }}
-            <i class="fa fa-minus-circle" v-on:click="removeItem(index)"></i>
+            <i class="fa fa-minus-circle" v-on:click="removeItem(list.key)"></i>
         </li>
     </transition-group>
 </div>
