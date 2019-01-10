@@ -6,10 +6,17 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Store from "./store";
 import firebase from "firebase";
 
-let fb = firebase.initializeApp({
-
+// connect to firebase database
+firebase.initializeApp({
+    apiKey: "AIzaSyBRrkp5xlsol3iPFmMoUg_c6tz9bNmoag0",
+    authDomain: "arcquest-85bc5.firebaseapp.com",
+    databaseURL: "https://arcquest-85bc5.firebaseio.com",
+    projectId: "arcquest-85bc5",
+    storageBucket: "arcquest-85bc5.appspot.com",
+    messagingSenderId: "727232800872"
 });
-let dbRef = fb.database();
+let dbRef = firebase.database();
+// export the ref to the todos list
 export const db = dbRef.ref('todos');
 
 // this creates an object to store variables in
