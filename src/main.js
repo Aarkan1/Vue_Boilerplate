@@ -4,6 +4,13 @@ import router from "./router";
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Store from "./store";
+import firebase from "firebase";
+
+let fb = firebase.initializeApp({
+
+});
+let dbRef = fb.database();
+export const db = dbRef.ref('todos');
 
 // this creates an object to store variables in
 // it loads the store into the Vue object
