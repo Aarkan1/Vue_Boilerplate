@@ -28,9 +28,7 @@ export default {
         addItem() {
             if (!this.validate && this.item.trim()) {
                 // add item to database
-                db.push({
-                    item: this.item
-                });
+                db.push(this.item);
                 this.item = '';
             } else {
                 console.log('Not valid');
@@ -62,11 +60,12 @@ export default {
             
             for(let key of keys){
                 list.push({
-                    item: dbList[key].item,
+                    item: dbList[key],
                     // import hash for index to remove
                     key: key
                 });
             }
+            // update local array with imported from array
             self.items = list;
 
             console.log('loaded items from db');
